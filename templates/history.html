@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>추억 회상</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f4f0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #42ceeb;
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            color: white;
+        }
+        .memory-container {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .memory-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+        }
+        .memory-card img {
+            width: 100%;
+            height: auto;
+        }
+        .memory-card .content {
+            padding: 15px;
+        }
+        .memory-card .content h3 {
+            margin: 0 0 10px;
+            color: #555;
+        }
+        .memory-card .content p {
+            margin: 0;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>추억 회상</h1>
+    </header>
+    <div class="memory-container">
+        <div class="memory-card">
+            <img src="../static/images/round_{{round_id}}/3.png" alt="추억 이미지">
+            <div class="content">
+                <h3>동아리 단체사진</h3>
+                <p>2024년 동아리에서 찍은 추억</p>
+            </div>
+        </div>
+        <div class="memory-card">
+            <img src="../static/images/round_{{round_id}}/4.png" alt="추억 이미지">
+            <div class="content">
+                <h3>산에서의 하루</h3>
+                <p>동아리에서 산으로 여행을 갔던 추억</p>
+            </div>
+        </div>
+        <div class="memory-card">
+            <img src="../static/images/round_{{round_id}}/5.png" alt="추억 이미지">
+            <div class="content">
+                <h3>마지막 동아리 단체사진</h3>
+                <p>축제의 마지막, 많은 눈물과 웃음이 함께 했던 날.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
